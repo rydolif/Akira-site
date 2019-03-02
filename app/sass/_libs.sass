@@ -1,7 +1,128 @@
-@import "../libs/bootstrap/bootstrap-grid-flex.min.css"
-@import "../libs/bootstrap/bootstrap-reboot.min.css"
-// @import "../libs/fontawesome/fontawesome-all.min.css"
-// @import "../libs/fancybox/jquery.fancybox.css"
-// @import "../libs/slick/slick.css"
-// @import "../libs/swiper/swiper.min.css"
-// @import "../libs/animation/animate.min.css"
+@import "../libs/bootstrap/bootstrap-grid-flex.min"
+@import "../libs/bootstrap/bootstrap-reboot.min"
+@import "../libs/flipster/jquery.flipster.min"
+// @import "../libs/fontawesome/fontawesome-all.min"
+// @import "../libs/fancybox/jquery.fancybox"
+@import "../libs/slick/slick"
+@import "../libs/slick/slick-theme"
+@import "../libs/swiper/swiper.min"
+// @import "../libs/animation/animate.min"
+
+
+//--------------------------flipster-slider--------------------------
+.flipster
+	&__item__content
+		border-radius: 25px
+		overflow: hidden
+
+		.text
+			height: 91px
+			box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.25), 0 0 16px rgba(171, 43, 153, 0.54)
+			border-radius: 0 0 20px 20px
+			background-color: #ab2b99
+			padding: 20px
+			font-size: 24px
+			color: #fff
+			text-align: center
+			font-weight: 700
+			line-height: 1.1
+
+	&__button
+		box-shadow: 0 0 9px rgba(0, 0, 0, 0.3)
+		background-color: #ffffff
+		width: 42px
+		height: 42px
+		border-radius: 50%
+		margin: 0 15px
+		opacity: 1
+
+		svg
+			width: 10px
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+		
+		&:hover,
+		&:focus
+			outline: none
+
+	&__item
+		opacity: 1 !important
+
+
+//--------------------------flipster-slider--------------------------
+.slick
+	&-arrow
+		width: 42px
+		height: 42px
+		box-shadow: 0 0 9px rgba(0, 0, 0, 0.3)
+		background-color: #ffffff
+		border-radius: 50%
+		margin: 0 15px
+		z-index: 1
+
+		&:hover,
+		&:focus
+			outline: none
+			background: #fff
+
+		&::before
+			display: none
+
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			width: 10px
+			height: 10px
+			border-top: 2px solid #484178
+			border-left: 2px solid #484178
+			transition: all .4s
+
+	&-next
+		&:hover
+			&::after
+				transform: translate(-50%, -50%) rotate(135deg)
+
+		&::after
+			transform: translate(-80%, -50%) rotate(135deg)
+
+	&-prev
+		&:hover
+			&::after
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+		&::after
+			transform: translate(-30%, -50%) rotate(-45deg)
+	
+	&-dots
+		bottom: -80px
+		
+		li
+			width: auto
+			height: auto
+
+			button
+				width: 13px
+				height: 13px
+				background-color: #ffffff
+				border-radius: 50%
+				margin-right: 0
+				transition: all .6s
+
+				&::before
+					display: none
+
+	&-active
+		button
+			width: 23px !important
+			height: 23px !important
+
+.slick-dotted.slick-slider
+	margin-bottom: 90px
+
+//--------------------------popupoverlay-slider--------------------------
+#sing_background
+	background-color: #fff !important

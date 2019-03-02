@@ -2,15 +2,20 @@
 
 
 //----------------------fonts---------------------
-$fonts: 'GothamPro', sans-serif
-$fw: 'Font Awesome 5 Brands', sans-serif
+$fonts: 'Acrom', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
-$accent: #000
+$accent: #f43ddb
+$accent-dark: #9247c3
+$light: #4cddee
 $text: #000
-$btn: #666
-$title: #333
+$title: #1e53a6
+
+$info: #514eb3
+
+$white: #fff
+
 
 //---------------------end-color---------------------
 
@@ -21,7 +26,7 @@ body
 	font-family: $fonts
 	font-size: 14px
 	color: $text
-	line-height: 1.75
+	line-height: 1.4
 	font-weight: 400
 
 ::selection
@@ -33,14 +38,17 @@ a, div, ul, li, input, textarea
 	&:focus
 		outline: none
 
-section
-	overflow: hidden
 	
 h1, h2, h3, h4, h5, h6
-	font-weight: 700
-	line-height: 1.4
+	font-weight: 800
+	line-height: 1
 	margin: 0
 	padding: 0
+
+h2
+	font-size: 30px
+	text-transform: uppercase
+	color: $title
 
 ul
 	margin: 0
@@ -53,32 +61,44 @@ i
 	color: #fff
 
 input, textarea
-	border: #808080 1px solid
-	border-radius: 0
+	width: 100%
+	border-radius: 20px
+	border: 1px solid #acacac
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
 	
 	&:focus:required:invalid
-		border-color: #808080
+		border-color: red
 		outline: none
 		box-shadow: none
 		-webkit-appearance: none
 
 	&:required:valid
-		border-color: #808080
+		border-color: green
 		outline: none
 		box-shadow: none
 		-webkit-appearance: none
 
 	&::placeholder
-		color: #808080
+		color: #c4c4c4
 		font-size: 12px
-		text-transform: uppercase
-		line-height: 1
+		line-height: 50px
+
+input
+	height: 50px
+	padding: 0 25px
+
+textarea
+	line-height: 1.2
+	padding: 20px 25px
+	height: 205px
+
+	&::placeholder
+		line-height: 1.2
 
 b, strong
-	font-weight: 700
+	font-weight: 800
 
 p
 	margin: 0
@@ -89,6 +109,31 @@ a:focus,
 a:hover
 	outline: none
 	text-decoration: none
+
+a
+	position: relative
+	z-index: 1
+
+	&::before
+		content: ''
+		width: 0
+		transform: scale(0)
+		transition: all .3s
+		position: absolute
+		left: 0
+		right: 0
+		margin: 0 auto
+		bottom: 0
+		width: 30px
+		height: 3px
+		background-color: $light
+		z-index: -1
+
+	&:hover,
+	&:focus
+		&::before
+			transform: scale(1)
+
 
 @import "_base/preloader"
 @import "_base/animation"

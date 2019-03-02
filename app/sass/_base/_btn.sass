@@ -2,18 +2,19 @@
 	position: relative
 	display: inline-block
 	height: 50px
+	width: 340px
+	padding-right: 50px
 	border: none
 	outline: none
-	padding: 0 30px
-	border-radius: 4px
-	background: $accent
+	border-radius: 50px
+	background: $white
 	text-align: center
 	text-transform: uppercase
-	font-size: 12px
-	color: #3f7a05
+	font-size: 16px
+	color: #c6c6c6
 	line-height: 50px
-	font-weight: 700
 	letter-spacing: .2px
+	transition: all .6s
 
 	&:hover,
 	&:focus
@@ -22,6 +23,59 @@
 		text-decoration: none
 		cursor: pointer
 		transition: all .3s
-		box-shadow: 0 5px 10px rgba($text, .4)
-		color: #3f7a05
+		box-shadow: 0 5px 10px rgba($light, .3)
+		color: #c6c6c6
+
+		img
+			left: 60%
+
+	&::before
+		display: none
+
+	
+	span
+		position: absolute
+		right: 7px
+		top: 50%
+		transform: translate(0, -50%)
+		width: 69px
+		height: 45px
+		border-radius: 15px
+		background-color: #4cddee
+
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: all .6s
+
+	&--accent-dark
+		position: relative
+		padding: 6px 85px 6px 6px
+		height: 45px
+		width: 100%
+		background-color: #9750c6
+		border-radius: 20px
+		box-shadow: 0 0 2px rgba(99, 48, 132, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+		text-align: right
+		color: #f4f4f4
+		font-size: 14px
+		text-transform: none
+		line-height: 1.2
+
+		&:hover,
+		&:focus
+			box-shadow: 0 0 9px rgba(99, 48, 132, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+			img
+				left: 83%
+
+		img
+			left: 77%
+
+	&--sing
+		width: 200px
+		background: rgba(255,255,255, .4)
+		padding: 0
+
 

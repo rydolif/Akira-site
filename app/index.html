@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Start</title>
+	<title>Akira</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,13 +19,15 @@
 		<div class="pulse"></div>
 	</div> -->
 
+<!-- <svg><use xlink:href="#abacus"></use></svg> -->
+
 	<header class="header">
 		<div class="container">
 			<div class="header__container">
 		
-				<div class="header__logo">
-					<a href="index.html"><img src="img/logo.svg" alt="logo" width="160" height="75"></a>
-				</div>
+				<a href="index.html" class="header__logo">
+					<svg><use xlink:href="#logo"></use></svg>
+				</a>
 
 				<button class="hamburger" type="button">
 					<span class="hamburger__box">
@@ -35,47 +37,857 @@
 
 				<nav class="nav">
 					<ul>
-						<li><a href="index.html"><i class="fab fa-500px"></i>Головна</a></li>
-						<li><a href="catalog.html">Наші послуги</a></li>
-						<li><a href="about.html">Виконанні роботи</a></li>
-						<li><a href="contacts.html">Контакти</a></li>
+						<li><a href="#">главная</a></li>
+						<li><a href="#">акира</a></li>
+						<li><a href="#">курсы</a></li>
+						<li><a href="#">партнеры</a></li>
+						<li><a href="#">франшиза</a></li>
+						<li><a href="#">тренажеры</a></li>
 					</ul>
 				</nav>
+
+				<div class="header__call call">
+					<div class="call__absolute">
+						<svg><use xlink:href="#telephone"></use></svg>
+					</div>
+					<a href="tel:84999384355"><b>8 (499) 938-43-55</b></a>
+					<br>
+					<a href="#" class="order_open">заказать звонок</a>
+				</div>
+
+				<div class="header__login">
+					<a href="#" class="">
+						<svg><use xlink:href="#user"></use></svg>
+						<b>вход</b>
+					</a>
+				</div>
 
 			</div>
 		</div>
 	</header>
 
-	<main class="main">
+	<section class="hero section" style="background-image: url(img/hero-bg.png)">
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-2 col-md-4">
 
-		<section class="section">
-			<div class="container">
+					<p class="hero__sub-title"><b>International Association</b></p>
+
+					<div class="hero__logo">
+						<svg><use xlink:href="#logo"></use></svg>
+					</div>
+
+					<a href="#" class="btn hero__btn opros_open">начать обучение <span><img src="img/arrow.svg" alt=""></span></a>
+
+				</div>
 
 			</div>
-		</section>
 
-	</main>
+			<div id="coverflow">
+				<ul class="flip-items">
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+					<li>
+						<img src="img/hero-slide2.jpg" alt="">
+						<p class="text">Обучаем детей <br>и проводим олимпиады</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="advantages section">
+		<div class="container">
+
+			<p class="advantages__decor section__decor">претмущества</p>
+
+			<h2>Наши преимущества</h2>
+
+			<div class="advantages__list">
+				<div class="advantages__item">
+					<h3>5000+</h3>
+					<p>довольных <br>учеников</p>
+				</div>
+				<div class="advantages__item">
+					<h3>800+</h3>
+					<p>выпускников - <br>тренеров</p>
+				</div>
+				<div class="advantages__item">
+					<h3>4+</h3>
+					<p>года <br>практики</p>
+				</div>
+				<div class="advantages__item">
+					<h3>100+</h3>
+					<p>партнеров <br> по СНГ</p>
+				</div>
+				<div class="advantages__item">
+					<h3>10+</h3>
+					<p>школ МА <br> в Казахстане</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="techniques section" style="background-image: url(img/advantages-bg.png)">
+		<div class="container">
+			
+			<p class="techniques__decor section__decor">наши методики</p>
+
+			<h2>Наши методики</h2>
+
+
+			<div class="techniques__list">
+				<div class="techniques__item">
+					<svg><use xlink:href="#abacus"></use></svg>
+					<p>ментальная <br> арифметика</p>
+					<a href="#" class="btn btn--accent-dark">получить <br>презентацию <img src="img/arrow.svg" alt=""></a>
+				</div>
+				<div class="techniques__item">
+					<svg><use xlink:href="#books"></use></svg>
+					<p>скорочтение</p>
+					<a href="#" class="btn btn--accent-dark">получить <br>презентацию <img src="img/arrow.svg" alt=""></a>
+				</div>
+				<div class="techniques__item">
+					<svg><use xlink:href="#calligraphy"></use></svg>
+					<p>каллиграфия</p>
+					<a href="#" class="btn btn--accent-dark">получить <br>презентацию <img src="img/arrow.svg" alt=""></a>
+				</div>
+				<div class="techniques__item">
+					<svg><use xlink:href="#emocional"></use></svg>
+					<p>эмоциональный <br> интеллект</p>
+					<a href="#" class="btn btn--accent-dark">получить <br>презентацию <img src="img/arrow.svg" alt=""></a>
+				</div>
+				<div class="techniques__item">
+					<svg><use xlink:href="#memory"></use></svg>
+					<p>эйдетика и <br> мнемотехника</p>
+					<a href="#" class="btn btn--accent-dark">получить <br>презентацию <img src="img/arrow.svg" alt=""></a>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mobile info section">
+		<div class="container">
+			<div class="info__container">
+				<h3><span>Скачайте</span> мобильное приложение <br><span>уже сейчас абсолютно</span> бессплатно!</h3>
+				<div class="mobile__link">
+					<img src="img/mobile.png" alt="">
+					<a href="#">скачать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<div class="container">
+
+			<img src="img/about-bg.png" alt="" class="about__bg">
+
+			<div class="about__top">
+				<h2>О нас</h2>
+				<p>
+					Компания «AKIRA Education» - официальный представитель Международной
+					<br>Ассоциации Ментальной Арифметики с правом выдачи сертификата на
+					<br>преподавание/проведения инструктажа и с 10 школами в 5 городах Казахстана.
+				</p>
+				<svg><use xlink:href="#logo"></use></svg>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<iframe width="1663" height="738" src="https://www.youtube.com/embed/oZa_djYJr4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="about__soc">
+						<a href="#" target="_blank"><svg><use xlink:href="#instagram"></use></svg></a>
+						<a href="#" target="_blank"><svg><use xlink:href="#youtube-play-button"></use></svg></a>
+						<a href="#" target="_blank"><svg><use xlink:href="#vk"></use></svg></a>
+						<p>
+							Подписывайтесь на наши группы в соцсетях.
+							<br>Общайтесь и следите за новостями
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="about__content">
+						<p>
+							Мы открыли свой первый центр в городе Алматы и запустили занятия. Для нас было важно качество, потому мы привлекали в компанию только тех людей, которые могли обеспечить идеальное выполнение работы. Занятия к концу года успешно шли уже в 10 партнёрских центрах города.
+							<span>2015</span>
+						</p>
+						<p>
+							Обучение стало настолько популярным, что  нам пришлось расширить наш штат до 50 человек, включая тренеров, сертифицированных авторов учебников и специалистов по созданию и ведению бизнеса. К тому времени у нас было 5 собственных центров в городах Казахстана.
+							<span>2016</span>
+						</p>
+						<p>
+							Была значительно расширена партнерская сеть компании, общее число партнеров достигло 71 организации.
+							<span>2017</span>
+						</p>
+						<p>
+							Партнерская сеть выросла до 100 организаций, в которых успешно велась и ведется образовательная деятельность по нашим методикам. На настоящий момент мы имеем 10 собственных школ по обучению тренеров ментальной арифметики и выпустили более 5000 учеников, 800 из которых ведут успешную преподавательскую деятельность.
+							<span>2018</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="team section" style="background-image: url(img/team-bg.png)">
+		<div class="container">
+
+			<p class="team__decor section__decor">наша команда</p>
+			
+			<h2>Наша команда</h2>
+
+			<div class="team__slider">
+				<div class="team__slide">
+					<img src="img/team1.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team2.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team4.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team4.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team1.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team1.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+					</p>
+				</div>
+				<div class="team__slide">
+					<img src="img/team1.jpg" alt="">
+					<p>
+						<b class="team__name">Имя Фамилия</b>
+						<b class="team__position">должность</b>
+						<span class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mail info section">
+		<div class="container">
+			<div class="info__container">
+				<h3><span>Оставьте свой email</span></h3>
+				<a href="#" class="btn">Ваш Email <span><img src="img/arrow.svg" alt=""></span></a>
+			</div>
+			<h3>и получите подарок ОТ AKIRA education!</h3>
+		</div>
+	</section>
+
+	<section class="begin section">
+		<div class="container">
+
+			<p class="begin__decor section__decor">алгоритм дейвствий</p>
+
+			<h2>с чего начать?</h2>
+
+			<div class="begin__list">
+				<div class="begin__item">
+					<div class="begin__svg">
+						<svg class="begin__svg_icon"><use xlink:href="#customer-service"></use></svg>
+						<img src="img/icon/begin1.svg" alt="" class="begin__svg_bg">
+						<svg class="begin__svg_bg"><use xlink:href="#begin1"></use></svg>
+						<span class="begin__svg_number">1</span>
+					</div>
+					<p>
+						<b>Оставьте заявку</b>
+						<a href="#" class="btn begin__btn">здесь</a>
+					</p>
+					<p>
+						Менеджер свяжеться с Вами в ближайшее время
+					</p>
+				</div>
+				<div class="begin__item">
+					<div class="begin__svg">
+						<svg class="begin__svg_icon"><use xlink:href="#laptop"></use></svg>
+						<svg class="begin__svg_bg"><use xlink:href="#begin2"></use></svg>
+						<span class="begin__svg_number">2</span>
+					</div>
+					<p>
+						Пройдите пробный бессплатный урок. <b>Заключаем договор</b> и Вы знакомитесь с офертой на сайте
+					</p>
+				</div>
+				<div class="begin__item">
+					<div class="begin__svg">
+						<svg class="begin__svg_icon"><use xlink:href="#pay-per-click"></use></svg>
+						<svg class="begin__svg_bg"><use xlink:href="#begin3"></use></svg>
+						<span class="begin__svg_number">3</span>
+					</div>
+					<p>
+						<b>Оплата</b>. Вы получаете доступ к материалам курса и нрафик обучения
+					</p>
+				</div>
+				<div class="begin__item">
+					<div class="begin__svg">
+						<svg class="begin__svg_icon"><use xlink:href="#learn"></use></svg>
+						<svg class="begin__svg_bg"><use xlink:href="#begin4"></use></svg>
+						<span class="begin__svg_number">1</span>
+					</div>
+					<p>
+						<b>Запускаете ваши курсы</b>. Мы сопровождаем, консультируем и проводим вебинары специально для Вас.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mail info section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-9">
+					<div class="info__container">
+						<h3><span>Пройдите опрос </span></h3>
+						<a href="#" class="btn">Пройдити опрос  <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+					<h3>и получите купон на скидку!!!</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="course section" style="background-image: url(img/course-bg.jpg)">
+		<div class="container">
+
+			<p class="course__decor section__decor">наши курсы</p>
+			
+			<h2>выберите курс и узнайте стоимость</h2>
+
+			<div class="filters button-group">
+				<p>1. кого Вы планируете обучать:</p>
+				<div>
+					<button class="button" data-filter=".child,.mental,.reading">детей</button>
+					<button class="button" data-filter=".parent,.sped,.mental">тренеров</button>
+				</div>
+			</div>
+			<div class="filters button-group">
+				<p>2. интересующие вас <br>методики:</p>
+				<div>
+					<button class="button" data-filter=".mental">ментальная арифметика</button>
+					<button class="button" data-filter=".reading">скорочтение</button>
+					<button class="button" data-filter=".calligraphy">каллиграфия</button>
+					<button class="button" data-filter=".intelligence">эмоциональный интеллект</button>
+					<button class="button" data-filter=".eidetic">эйдетика и мнемотехника</button>
+				</div>
+			</div>
+
+
+			<div class="row course__grid">
+				<div class="col-lg-4 item mental child">
+					<div class="course__grid_item">
+						<img src="img/course1.jpg" alt="">
+						<a href="#" class="btn">Lorem ipsumdolor sit amet <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 item reading child">
+					<div class="course__grid_item">
+						<img src="img/course1.jpg" alt="">
+						<a href="#" class="btn">Lorem ipsumdolor sit amet <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 item calligraphy parent">
+					<div class="course__grid_item">
+						<img src="img/course1.jpg" alt="">
+						<a href="#" class="btn">Lorem ipsumdolor sit amet <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 item intelligence parent">
+					<div class="course__grid_item">
+						<img src="img/course1.jpg" alt="">
+						<a href="#" class="btn">Lorem ipsumdolor sit amet <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+				</div>
+				<div class="col-lg-4 item eidetic parent">
+					<div class="course__grid_item">
+						<img src="img/course1.jpg" alt="">
+						<a href="#" class="btn">Lorem ipsumdolor sit amet <span><img src="img/arrow.svg" alt=""></span></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="reviews section">
+		<div class="container">
+
+			<h2>отзывы наших клиентов</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="reviews__slider">
+
+						<div class="reviews__item">
+							<div class="reviews__decor">“</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis repellendus, nulla impedit beatae alias eum voluptates, maiores culpa quibusdam?
+							</p>
+							<div class="reviews__login">
+								<div class="reviews__login_img">
+									<svg><use xlink:href="#user"></use></svg>
+								</div>
+								<b>Имя Фамилия</b>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="reviews__decor">“</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="reviews__login">
+								<div class="reviews__login_img">
+									<svg><use xlink:href="#user"></use></svg>
+								</div>
+								<b>Имя Фамилия</b>
+							</div>
+						</div>
+						<div class="reviews__item">
+							<div class="reviews__decor">“</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis repellendus, nulla impedit beatae alias eum voluptates, maiores culpa quibusdam?
+							</p>
+							<div class="reviews__login">
+								<div class="reviews__login_img">
+									<svg><use xlink:href="#user"></use></svg>
+								</div>
+								<b>Имя Фамилия</b>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="question section" style="background-image: url(img/question-bg.jpg)">
+		<div class="container">
+
+			<p class="question__decor section__decor">вопрос-ответ</p>
+			<img src="img/question-decor.png" alt="" class="question__man">
+
+			<h2>часто задаваемые вопросы</h2>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="block block--active">
+						<div class="block__header">
+							<span></span>
+							<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></p>
+						</div>
+						<div class="block__content">
+						  <p>
+							 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat reiciendis pariatur voluptatum dicta, amet ab nobis quod laboriosam. Neque excepturi optio magnam laborum commodi eum. Nisi facere cumque earum!
+						  </p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="block__header">
+							<span></span>
+							<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></p>
+						</div>
+						<div class="block__content">
+						  <p>
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur, voluptates hic deserunt possimus. Modi repudiandae fugiat adipisci quam vitae et error placeat, nostrum amet, dicta eum eos accusantium sit!
+						  </p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="block__header">
+							<span></span>
+							<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></p>
+						</div>
+						<div class="block__content">
+						  <p>
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur, voluptates hic deserunt possimus. Modi repudiandae fugiat adipisci quam vitae et error placeat, nostrum amet, dicta eum eos accusantium sit!
+						  </p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="block__header">
+							<span></span>
+							<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></p>
+						</div>
+						<div class="block__content">
+						  <p>
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur, voluptates hic deserunt possimus. Modi repudiandae fugiat adipisci quam vitae et error placeat, nostrum amet, dicta eum eos accusantium sit!
+						  </p>
+						</div>
+					</div>
+					<div class="block">
+						<div class="block__header">
+							<span></span>
+							<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</b></p>
+						</div>
+						<div class="block__content">
+						  <p>
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tenetur, voluptates hic deserunt possimus. Modi repudiandae fugiat adipisci quam vitae et error placeat, nostrum amet, dicta eum eos accusantium sit!
+						  </p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="question__info info section">
+		<div class="container">
+			<h3><span>Не нашли ответ на интересующий Вас вопрос? </span></h3>
+			<div class="info__container">
+				<h3>Задайте свой вопрос нам! </h3>
+				<a href="#" class="btn">Пройдити опрос  <span><img src="img/arrow.svg" alt=""></span></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="partners section">
+		<div class="container">
+			
+			<h2>наши партнеры</h2>
+
+			<div class="partners__slider">
+				<div class="partners__item"><img src="img/partners1.jpg" alt=""></div>
+				<div class="partners__item"><img src="img/partners2.jpg" alt=""></div>
+				<div class="partners__item"><img src="img/partners3.jpg" alt=""></div>
+				<div class="partners__item"><img src="img/partners4.jpg" alt=""></div>
+				<div class="partners__item"><img src="img/partners3.jpg" alt=""></div>
+			</div>
+
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
-			
+			<div class="row">
+
+				<div class="col-lg-3">
+					<a href="/" class="footer__logo"><svg><use xlink:href="#logo"></use></svg></a>
+					<p>Международная ассоциация <br>Акира Эдукейшн, <br>International Association <br>Akira Education</p>
+					<div class="footer__line"></div>
+					<p>All rights reserved, 2018</p>
+				</div>
+
+				<div class="offset-lg-1 col-lg-2">
+					<h3>меню</h3>
+					<ul class="footer__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Акира</a></li>
+						<li><a href="#">Запустить курсы</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a href="#">Франшиза</a></li>
+						<li><a href="#">Тренажеры</a></li>
+					</ul>
+				</div>   
+
+				<div class="col-lg-2">
+					<h3>контакты</h3>
+					<p>
+						г. Алматы, ул. Жандосова д. 58
+						<a href="#" target="_blank">Показать на карте</a>
+					</p>
+					<a href="tel:84999384355" class="footer__link">8 (499) 938-43-55</a>
+					<a href="mailto:adress@gmail.com" class="footer__link">adress@gmail.com</a>
+					<div class="footer__soc">
+						<a href="#" target="_blank"><svg><use xlink:href="#instagram"></use></svg></a>
+						<a href="#" target="_blank"><svg><use xlink:href="#youtube-play-button"></use></svg></a>
+						<a href="#" target="_blank"><svg><use xlink:href="#vk"></use></svg></a>
+						<a href="#" target="_blank"><svg><use xlink:href="#google-play"></use></svg></a>
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-3">
+					<h3>Обратная связь</h3>
+					<div class="footer__call call">
+						<div class="call__absolute">
+							<svg><use xlink:href="#telephone"></use></svg>
+						</div>
+						<a href="tel:84999384355"><b>8 (499) 938-43-55</b></a>
+						<a href="#" class="order_open">заказать звонок</a>
+					</div>
+					<div class="footer__call call">
+						<div class="call__absolute">
+							<svg><use xlink:href="#mail"></use></svg>
+						</div>
+						<a href="mailto:adress@gmail.com"><b>adress@gmail.com</b></a>
+						<a href="#" class="order_open">Напишите нам</a>
+					</div>
+					<a href="#" class="btn btn--sing sing_open">Записаться</a>
+				</div>
+
+			</div>
 		</div>
 	</footer>
 
 	<!-- modal -->
-		<div class="modal" id="order">
+		<div class="modal" id="sing">
 			<div class="wrapper">
 				<form action="sendmail.php" class="form" method="post">
 
-					<button class="close order_close" type="button"></button>
+					<button class="close sing_close" type="button"></button>
 
-					<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
-					<input type="hidden" name="subject" value="Узнать подробнее!">
-					<div class="footer__form_line"><input type="text" name="name" placeholder="Имя" required></div>
-					<div class="footer__form_line"><input type="tel" name="phone" required placeholder="Телефон"></div>
-					<div><button type="submit" class="btn footer__form_btn" name="submit">Отправить</button></div>
-					<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
+					<h3>Заполните форму и наш специалист свяжется с Вами для консультации.</h3>
+					<input type="hidden" name="subject" value="Консультация">
 
+					<div class="modal__line">
+						<input type="text" name="name" placeholder="Введите Ваше имя" required>
+					</div>
+					<div class="modal__line">
+						<input type="tel" name="phone" required placeholder="Введите ваш телефон">
+					</div>
+					<div class="modal__line--textarea">
+						<textarea name="textarea" id="" placeholder="Напишите Ваш вопрос"></textarea>
+					</div>
+					<div class="modal__line--checkbox">
+						<input type="checkbox" name="checkbox" id="checkbox" value="">
+						<label for="checkbox">Я принимаю и даю согласие на храниние и обработку персональных данных </label>
+					</div>
+					<div class="modal__line">
+						<button type="submit" class="btn" name="submit">Отправить</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="modal modal--opros" id="opros">
+			<div class="wrapper">
+				<form action="sendmail.php" class="form" method="post">
+
+					<button class="close opros_close" type="button"></button>
+
+					<h3>Пройдите опрос <b>и получите купон на скидку!!!</b></h3>
+					<input type="hidden" name="subject" value="Опрос">
+
+					<div class="modal--opros__slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="modal--opros__item swiper-slide">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox0" value="" checked="checked" checked>
+										<label for="checkbox0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox1" value="">
+									<label for="checkbox1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox2" value="">
+										<label for="checkbox2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox3" value="">
+									<label for="checkbox3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+							<div class="modal--opros__item swiper-slide">
+							 	<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio0" value="" checked="checked" checked>
+										<label for="radio0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio1" value="">
+									<label for="radio1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio2" value="">
+										<label for="radio2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio3" value="">
+									<label for="radio3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+							<div class="modal--opros__item swiper-slide">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox0" value="" checked="checked" checked>
+										<label for="checkbox0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox1" value="">
+									<label for="checkbox1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox2" value="">
+										<label for="checkbox2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox3" value="">
+									<label for="checkbox3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+							<div class="modal--opros__item swiper-slide">
+							 	<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio0" value="" checked="checked" checked>
+										<label for="radio0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio1" value="">
+									<label for="radio1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio2" value="">
+										<label for="radio2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio3" value="">
+									<label for="radio3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+							<div class="modal--opros__item swiper-slide">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox0" value="" checked="checked" checked>
+										<label for="checkbox0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox1" value="">
+									<label for="checkbox1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--checkbox">
+										<input type="checkbox" name="checkbox" id="checkbox2" value="">
+										<label for="checkbox2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--checkbox">
+									<input type="checkbox" name="checkbox" id="checkbox3" value="">
+									<label for="checkbox3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+							<div class="modal--opros__item swiper-slide">
+							 	<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam?
+								</p>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio0" value="" checked="checked" checked>
+										<label for="radio0">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio1" value="">
+									<label for="radio1">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+								<div class="modal--opros__line">
+									<div class="modal__line--radio">
+										<input type="radio" name="radio" id="radio2" value="">
+										<label for="radio2">Lorem ipsum dolor sit amet, consectetur .</label>
+									</div>
+								</div>
+								<div class="modal__line--radio">
+									<input type="radio" name="radio" id="radio3" value="">
+									<label for="radio3">Lorem ipsum dolor sit amet, consectetur .</label>
+								</div>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+						<p class="text">Вопрос:</p>
+					</div>
+<!-- 
+					<div class="modal__line">
+						<button type="submit" class="btn" name="submit">Отправить</button>
+					</div>
+ -->
 				</form>
 			</div>
 		</div>
