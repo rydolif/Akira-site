@@ -2,7 +2,7 @@
 @import "../libs/bootstrap/bootstrap-reboot.min"
 @import "../libs/flipster/jquery.flipster.min"
 // @import "../libs/fontawesome/fontawesome-all.min"
-// @import "../libs/fancybox/jquery.fancybox"
+@import "../libs/fancybox/jquery.fancybox"
 @import "../libs/slick/slick"
 @import "../libs/slick/slick-theme"
 @import "../libs/swiper/swiper.min"
@@ -51,7 +51,7 @@
 		opacity: 1 !important
 
 
-//--------------------------flipster-slider--------------------------
+//--------------------------slick-slider--------------------------
 .slick
 	&-arrow
 		width: 42px
@@ -105,24 +105,79 @@
 			height: auto
 
 			button
-				width: 13px
-				height: 13px
+				width: 8px
+				height: 8px
 				background-color: #ffffff
 				border-radius: 50%
 				margin-right: 0
 				transition: all .6s
+				opacity: .55
 
 				&::before
 					display: none
 
 	&-active
 		button
-			width: 23px !important
-			height: 23px !important
+			width: 14px !important
+			height: 14px !important
+			opacity: 1 !important
 
 .slick-dotted.slick-slider
 	margin-bottom: 90px
 
-//--------------------------popupoverlay-slider--------------------------
+//--------------------------popupoverlay--------------------------
 #sing_background
 	background-color: #fff !important
+
+
+//--------------------------swiper--------------------------
+.swiper-button-prev,
+.swiper-button-next
+	bottom: 0
+	top: auto
+	width: 42px
+	height: 42px
+	background-color: #4cddee
+	background-image: none
+	border-radius: 50%
+
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		width: 12px
+		height: 12px
+		border-top: 2px solid #fff
+		border-left: 2px solid #fff
+
+
+.swiper-button-prev
+	left: auto
+	right: 75px
+
+	&::before
+		transform: translate(-35%, -50%) rotate(-45deg)
+
+.swiper-button-next
+	&::before
+		transform: translate(-75%, -50%) rotate(135deg)
+
+
+
+.swiper-pagination-bullet
+	width: 25px
+	height: 25px
+	background: none
+	font-size: 24px
+	font-weight: 300
+	transition: all .3s
+	
+
+.swiper-pagination-bullet-active
+	font-size: 36px
+	font-weight: 800
+	color: #4cddee
+
+.swiper-pagination
+	z-index: -1

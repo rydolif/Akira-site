@@ -4,6 +4,7 @@
 
 .header
 	position: fixed
+	top: 0
 	right: 0
 	left: 0
 	padding: 20px 0
@@ -106,6 +107,7 @@
 .section
 	position: relative
 	z-index: 1
+	overflow: hidden
 
 	&__decor
 		position: absolute
@@ -119,7 +121,19 @@
 		white-space: nowrap
 
 
+.bg
+	&--hero
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		height: 595px
+		background-image: linear-gradient(to left, #f43ddb 0%, #9247c3 50%, #1e53a6 100%)
+		z-index: -1
+
+
 .hero
+	background-image: url(../img/hero-bg.png)
 	background-position: top center
 	background-repeat: no-repeat
 	padding-top: 185px
@@ -184,7 +198,7 @@
 
 	&__item
 		width: 20%
-		min-width: 200px
+		min-width: 185px
 		text-align: center
 
 		p
@@ -192,6 +206,7 @@
 
 
 .techniques
+	background-image: url(../img/advantages-bg.png)
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
@@ -215,7 +230,7 @@
 
 	&__item
 		width: 19%
-		min-width: 200px
+		min-width: 185px
 		text-align: center
 		padding: 10px
 		transition: all .9s
@@ -273,29 +288,53 @@
 		justify-content: space-between
 		align-items: center
 
+	&--call
+		padding-top: 45px
+		padding-bottom: 35px
 
-.mobile
-	padding: 20px 0
-
-	&__link
-		text-align: center
-
-		img
-			display: block
-			width: 100px
-			height: 100px
-			margin-bottom: 10px
-
-		a
+		&__tel
+			font-size: 48px
 			color: $light
-			font-size: 16px
-			text-transform: uppercase
+			margin-right: 75px
+			line-height: 1
+
+			&:hover,
+			&:focus
+				color: $light
 
 			&::before
-				background: $light
-				width: 90%
-				height: 2px
+				width: 100%
+				bottom: -3px
 
+
+	&--mobile
+		padding: 20px 0
+
+		&__link
+			text-align: center
+
+			img
+				display: block
+				width: 100px
+				height: 100px
+				margin-bottom: 10px
+
+			a
+				color: $light
+				font-size: 16px
+				text-transform: uppercase
+
+				&::before
+					background: $light
+					width: 90%
+					height: 2px
+
+	&--mail
+		padding-top: 50px
+		padding-bottom: 40px
+
+		h3
+			letter-spacing: -0.72px
 
 .about
 	
@@ -398,6 +437,7 @@
 .team
 	padding-top: 80px
 	padding-bottom: 45px
+	background-image: url(../img/team-bg.png)
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
@@ -471,14 +511,6 @@
 
 		img
 			width: 100%
-
-
-.mail
-	padding-top: 50px
-	padding-bottom: 40px
-
-	h3
-		letter-spacing: -0.72px
 
 
 .begin
@@ -570,7 +602,9 @@
 
 
 .course
+	background-image: url(../img/course-bg.jpg), linear-gradient(to right, #f43ddb 0%, #9247c3 50%, #1e53a6 100%)
 	background-position: top center
+	background-repeat-x: no-repeat
 	padding-top: 80px
 	padding-bottom: 110px
 
@@ -727,6 +761,7 @@
 
 .question
 	color: #fff
+	background-image: url(../img/question-bg.jpg)
 	background-position: center
 	background-size: cover
 

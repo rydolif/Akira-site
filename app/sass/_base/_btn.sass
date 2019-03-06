@@ -26,13 +26,12 @@
 		box-shadow: 0 5px 10px rgba($light, .3)
 		color: #c6c6c6
 
-		img
+		svg
 			left: 60%
 
 	&::before
 		display: none
 
-	
 	span
 		position: absolute
 		right: 7px
@@ -43,12 +42,15 @@
 		border-radius: 15px
 		background-color: #4cddee
 
-	img
+	svg
 		position: absolute
 		top: 50%
 		left: 50%
-		transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%) rotate(-180deg)
 		transition: all .6s
+		fill: #fff
+		height: 25px
+		width: 35px
 
 	&--accent-dark
 		position: relative
@@ -67,15 +69,91 @@
 		&:hover,
 		&:focus
 			box-shadow: 0 0 9px rgba(99, 48, 132, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
-			img
+			svg
 				left: 83%
 
-		img
+		svg
 			left: 77%
 
 	&--sing
 		width: 200px
 		background: rgba(255,255,255, .4)
 		padding: 0
+
+	&--choose
+		width: 100%
+		background-color: #9750c6
+		box-shadow: 0 0 9px rgba(99, 48, 132, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+		height: 45px
+		line-height: 45px
+		padding: 0 20px
+		text-align: left
+		color: #f4f4f4
+		font-weight: 800
+		font-size: 14px
+		letter-spacing: 0
+	
+	&--curse--advantages
+		height: 45px
+		width: 100%
+		border-radius: 15px
+		background: $light
+		line-height: 1.1
+		color: #fff
+		text-align: center
+		font-weight: 800
+		padding: 5px
+		margin-top: 35px
+
+		&:hover,
+		&:focus
+			color: #fff
+			box-shadow: 0 0 9px rgba(76, 221, 238, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+
+	&--curse--graduates
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 45px
+		width: 260px
+		border-radius: 15px
+		background: $light
+		line-height: 1.1
+		color: #fff
+		text-align: center
+		font-weight: 800
+		padding: 0
+
+		&:hover,
+		&:focus
+			color: #fff
+			box-shadow: 0 0 9px rgba(76, 221, 238, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+
+	&--franchise
+		display: flex
+		justify-content: center
+		background: $light
+		width: 100%
+		margin: 0 auto
+		max-width: 230px
+		height: 45px
+		color: #fff
+		align-items: center
+		padding: 0
+		font-size: 14px
+		font-weight: 800
+
+		svg
+			right: 0px
+			left: auto
+
+		&:hover,
+		&:focus
+			color: #fff
+			box-shadow: 0 0 9px rgba(76, 221, 238, 0.94), 0 0 6px rgba(0, 0, 0, 0.29)
+
+			svg
+				right: 10px
+				left: auto
 
 
