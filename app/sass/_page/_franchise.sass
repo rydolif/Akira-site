@@ -127,20 +127,82 @@
 			color: $light
 			margin-bottom: 100px
 
+		p
+			color: #fff
+			margin-bottom: 15px
+
 		&__list
 			display: flex
 			flex-wrap: wrap
+			justify-content: space-between
 
 		&__item
-			width: 24%
+			width: 22%
 
 			&_img
+				position: relative
+				width: 195px
+				height: 195px
+				margin: 0 auto 35px
+				border: 2px solid #ffffff
+				border-radius: 50%
+				z-index: -1
 
 			&_number
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translate(-50%, -50%)
+				z-index: 1
+				color: #9247c3
+				font-size: 75px
+				line-height: .7
+				z-index: 1
 
+			svg
+				width: 100px
+				height: 100px
+				fill: #fff
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+	
+
+	&--techniques
+		background: #fff
+
+		&__decor
+			left: 0
+			top: 25px
+			color: #f9f9f9
+
+		h2
+			color: $title
+
+		.techniques__item
+			p
+				color: #3f4aaa
+
+		.techniques__item_svg
+			fill: $light
+
+
+	&--work
+		background: #f8f8f8
+		
+		.curse--work__decor
+			color: #ececec
+			opacity: 1
+
+		.curse--work__title_soc
+			color: #373737
 			
+			svg
+				fill: $light
 
-
+		.slick-dots li button
+			background: $light
 
 
 
