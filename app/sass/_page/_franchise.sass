@@ -15,6 +15,7 @@
 
 		h1
 			position: relative
+			display: inline-block
 			text-transform: uppercase
 			margin-bottom: 55px
 
@@ -203,6 +204,172 @@
 
 		.slick-dots li button
 			background: $light
+	
+
+	&--system
+		background-image: url(../img/question-bg.jpg)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		padding-top: 40px
+		padding-bottom: 100px
+
+		h2
+			color: $light
+			margin-bottom: 90px
+
+
+		&__decor
+			opacity: 0.14
+			color: #d2d2d2
+			top: 0
+			right: 0
+
+		.btn--franchise
+			max-width: 340px
+			margin-bottom: 25px
+
+		&__content
+			margin-left: 88px
+		
+			p
+				font-size: 16px
+				line-height: 1.5
+				color: #fff
+				text-transform: uppercase
+				font-weight: 800
+				margin-bottom: 10px
+		&__text
+			font-size: 16px
+			line-height: 1.5
+			color: #fff
+			text-transform: uppercase
+			font-weight: 800
+			margin-bottom: 10px
+
+		&__arrow
+			position: absolute
+			left: -40px
+			top: 17px
+			width: 10px
+			height: 10px
+			border-top: 2px solid #fff
+			border-left: 2px solid #fff
+			transform: rotate(135deg)
+
+		&__list
+			margin-left: 40px
+
+			li
+				position: relative
+				margin-bottom: 15px
+				padding-left: 45px
+				color: #fff
+				font-size: 14px
+
+				&::before
+					content: ''
+					background-image: url(../img/curse-check.png)
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center
+					position: absolute
+					top: -3px
+					left: 0
+					width: 30px
+					height: 30px
+
+
+	&--stages
+		padding: 65px 0
+
+		h2
+			margin-bottom: 95px
+
+		&__decor
+			top: 30px
+			left: 0
+			color: #f9f9f9
+
+		&__number
+			position: absolute
+			bottom: 100%
+			font-size: 36px
+			font-weight: 800
+			line-height: .6
+			color: $light
+			z-index: -1
+
+		&__list
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border: 1px solid $light
+			border-radius: 20px
+			z-index: 1
+			background: #fff
+			margin-bottom: 50px
+
+			li
+				position: relative
+				width: 50%
+				border-radius: 20px
+			
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 80px
+				padding: 20px 30px
+				border-radius: 20px
+				font-size: 18px
+				color: $light
+				text-align: center
+				font-weight: 800
+				transition: all .6s
+
+				&:hover
+					background: rgba($light, .3)
+
+				&::before
+					display: none
+
+			.active
+				background: $light !important
+				color: #fff !important
+
+		&__wrap
+			width: 70%
+			margin: 0 auto
+
+			li
+				position: relative
+				margin-bottom: 15px
+				padding-left: 45px
+
+				&::before
+					content: ''
+					background-image: url(../img/curse-check.png)
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center
+					position: absolute
+					top: -3px
+					left: 0
+					width: 30px
+					height: 30px
+	
+	&--map
+		padding-top: 30px
+
+		h2
+			color: $light
+			margin-bottom: 40px
+
+		&__decor
+			top: 0
+			left: 0
+			color: #ececec
 
 
 

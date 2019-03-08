@@ -1,19 +1,24 @@
 @import "libs"
 @import "base"
 
+.main
+	margin-top: 105px
 
 .header
 	position: fixed
 	top: 0
 	right: 0
 	left: 0
-	padding: 20px 0
+	padding: 25px 0
 	transition: all .9s
 	z-index: 1001
+	background-position: -2400px
+	background-repeat: no-repeat
+	background-image: linear-gradient(to right, #1e53a6 0%, #9247c3 50%, #f43ddb 100%)
 
 	&--active, &--menu
-		background-color: rgba($accent, .9)
-
+		background-position: 0
+		background-repeat: no-repeat
 
 	&__container
 		position: relative
@@ -62,9 +67,43 @@
 		justify-content: space-between
 
 	li
+		position: relative
 		margin-right: 15px
+
+		&:hover,
+		&:focus
+			ul
+				display: flex
+
+
 		&:last-child
 			margin-right: 0
+
+		ul
+			display: none
+			flex-direction: column
+			position: absolute
+			left: 50%
+			transform: translate(-50%, 0)
+			top: 25px
+			width: 120px
+			box-shadow: 0 0 9px rgba(0, 0, 0, 0.3)
+			border-radius: 20px
+			background: rgba(255,255,255, 1)
+			padding: 15px 10px 15px
+
+			li
+				margin-bottom: 10px
+				margin-right: 0
+
+				&:last-child
+					margin-bottom: 0
+
+
+			a
+				color: $text
+				font-weight: 500
+				
 
 	a
 		text-transform: uppercase
@@ -74,6 +113,10 @@
 		&::before
 			bottom: -5px
 
+	.active
+		&::before
+			transform: scale(1) !important
+
 
 .call
 	position: relative
@@ -82,6 +125,11 @@
 	a
 		color: #fff
 		text-transform: uppercase
+
+		&::before
+			height: 1px
+			width: 100%
+			bottom: -1px
 
 	&__absolute
 		position: absolute
@@ -156,6 +204,30 @@
 
 	&__btn
 		margin-bottom: 140px
+
+
+	.flipster__item__content
+		position: relative
+
+		.btn
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			opacity: 0
+			transition: all .6s
+			z-index: 1
+			font-size: 24px
+			padding-right: 0
+			font-weight: 800
+			width: 250px
+
+		&:hover,
+		&:focus
+			.btn
+				opacity: 1
+				color: #FFF
+				border: 1px solid #fff
 
 
 .advantages
@@ -335,6 +407,7 @@
 
 		h3
 			letter-spacing: -0.72px
+
 
 .about
 	
@@ -660,6 +733,7 @@
 		transition: all .6s
 		line-height: 1.1
 		margin-bottom: 18px
+		cursor: pointer
 
 		&:hover,
 		&:focus
@@ -671,6 +745,7 @@
 		border-radius: 0
 		background: #1e53a6
 		width: 100%
+		max-width: 100%
 		font-weight: 800
 		text-transform: none
 
@@ -900,6 +975,10 @@
 		color: $light
 		text-transform: uppercase
 
+	.active
+		&::before
+			transform: scale(1) !important
+
 	&__logo
 		display: block
 		fill: $light
@@ -945,6 +1024,9 @@
 
 		a
 			padding: 3px 0
+
+			&::before
+				bottom: 2px
 		
 		.call__absolute
 			right: auto
@@ -953,6 +1035,106 @@
 	&__link
 		margin-bottom: 15px
 
+		&::before
+			bottom: -2px
+			height: 1px
+			width: 100%
+
+.partners
+	text-transform: uppercase
+	
+	h3
+		margin-bottom: 15px
+		color: $light
+		font-size: 16px
+	p
+		margin-bottom: 15px
+
+.article
+	.grums
+		margin-bottom: 70px
+
+	article
+		margin-bottom: 70px
+
+	img
+		float: left
+		margin-right: 25px
+		margin-bottom: 25px
+
+	q
+		display: block
+		width: 80%
+		margin: 20px auto
+		font-weight: 700
+
+	.btn
+		margin-right: 0
+		background: $accent
+
+
+.grums
+	color: $light
+	line-height: 1.2
+	display: flex
+	align-items: center
+	
+
+	b
+		font-size: 18px
+
+	span
+		margin: 0 15px
+		font-size: 30px
+		font-weight: 800
+
+	a
+		color: $light
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 800
+
+		&::before
+			width: 100%
+
+.pagination
+	color: $text
+	font-size: 18px
+	text-transform: uppercase
+	margin-bottom: 40px
+	font-weight: 700
+	display: flex
+	justify-content: center
+
+	span
+		color: #fff
+		background: $accent
+
+	a, span
+		font-size: 18px
+		text-transform: uppercase
+		margin: 0 10px
+		width: 40px
+		height: 40px
+		display: block
+		border-radius: 50%
+		border: 1px solid $accent
+		line-height: 40px
+		text-align: center
+		transition: all .6s
+
+		&:hover,
+		&:focus
+			color: #fff
+			background: $accent
+
+	a
+		color: $accent
+		&::before
+			display: none
+
+.map
+	height: 600px
 
 @import "page"
 @import "media" // Always at the end

@@ -1,5 +1,28 @@
 $(function() {
 
+//-------------------------------активна ссилка на якій знаходишся для меню---------------------------------------
+  $('nav ul li a').each(function () {
+      var location = window.location.href;
+      var link = this.href; 
+      if(location == link) {
+          $(this).addClass('active');
+      }
+  });
+
+//---------------------------tabs-----------------------
+  $('.tabs__wrap').hide();
+  $('.tabs__wrap:first').show();
+  $('.tabs ul a:first').addClass('active');
+   $('.tabs ul a').click(function(event){
+    event.preventDefault();
+    $('.tabs ul a').removeClass('active');
+    $(this).addClass('active');
+    $('.tabs__wrap').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
+
+
 //------------------------------acardeon---------------------------
   $(".block__content").slideUp("slow");
   $(".block").first().addClass('active');
@@ -350,9 +373,9 @@ $(function() {
 
 //----------------------------------------preloader----------------------------------
 
-  // $(window).on('load', function(){
-  //   $('.preloader').delay(1000).fadeOut('slow');
-  // });
+  $(window).on('load', function(){
+    $('.preloader').delay(122000).fadeOut('slow');
+  });
 
 
 //--------------------------------------icon----------------------------------------
