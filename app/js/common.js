@@ -374,7 +374,7 @@ $(function() {
 //----------------------------------------preloader----------------------------------
 
   $(window).on('load', function(){
-    $('.preloader').delay(122000).fadeOut('slow');
+    $('.preloader').delay(2500).fadeOut('slow');
   });
 
 

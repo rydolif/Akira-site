@@ -1,8 +1,92 @@
 @import "libs"
 @import "base"
 
+.parallax
+	position: absolute
+	z-index: -1
+	transform: translate(-50%, -50%)
+
+	&--sped
+		&-seven
+			animation: parallax 30s linear infinite
+			
+		&-six
+
+			animation: parallax 60s linear infinite
+
+		&-five
+			animation: parallax 50s ease-in infinite
+
+		&-four
+			animation: parallax 40s ease-in infinite
+
+	&--position
+		&-seven
+			left: 90%
+			top: 15%
+
+		&-six
+			top: 40%
+			left: 95%
+
+		&-five
+			top: 10%
+			left: 10%
+
+		&-four
+			top: 50%
+			left: 5%
+
+	&--circle
+		&--white
+			width: 54px
+			height: 54px
+			box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.14)
+			border: 15px solid #ffffff
+			border-radius: 50%
+
+		&--light
+			width: 84px
+			height: 84px
+			box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.14)
+			border: 22px solid #4cddee
+			border-radius: 50%
+
+	&--width
+		&-min
+			width: 40px
+
+		&-big
+			width: 65px
+
+		&-norm
+			width: 55px
+
+	&--num
+		opacity: 0.65
+		text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.18)
+		color: #ffffff
+		font-size: 200px
+		line-height: 1
+		font-weight: 400
+		line-height: 36px
+		text-transform: uppercase
+		font-weight: 800
+
+		&-left
+			left: 5%
+			top: 87%
+
+		&-right
+			left: 90%
+
+	&--cross
+		transform: rotate(-40deg)
+
+
 .main
 	margin-top: 105px
+
 
 .header
 	position: fixed
@@ -151,6 +235,10 @@
 			width: 39px
 			height: 39px
 
+		&--tel
+			svg
+				animation: call 1s linear infinite
+
 
 .section
 	position: relative
@@ -165,7 +253,7 @@
 		text-decoration: line-through
 		text-transform: uppercase
 		line-height: .7
-		z-index: -1
+		z-index: -2
 		white-space: nowrap
 
 
@@ -342,6 +430,7 @@
 
 .info
 	background: #ebebeb
+	overflow: initial
 
 	h3
 		font-size: 48px
@@ -382,6 +471,10 @@
 	&--mobile
 		padding: 20px 0
 
+		.parallax--num-left
+			top: 50%
+			transform: translate(-50%, -50%)
+
 		&__link
 			text-align: center
 
@@ -401,9 +494,14 @@
 					width: 90%
 					height: 2px
 
+
 	&--mail
 		padding-top: 50px
 		padding-bottom: 40px
+
+		.parallax--num-left
+			top: 50%
+			transform: translate(-50%, -50%)
 
 		h3
 			letter-spacing: -0.72px
