@@ -855,7 +855,11 @@
 	h2
 		margin-bottom: 60px
 
-	&__slider
+	&__decor
+		right: 0
+		top: 60px
+		opacity: 0.14
+		color: #d2d2d2
 
 	&__item
 		position: relative
@@ -868,7 +872,16 @@
 		p
 			max-height: 140px
 			overflow: auto
-			
+		&_decor
+			position: absolute
+			top: -17px
+			left: 20%
+			color: #4cddee
+			font-family: Montserrat
+			font-size: 150px
+			line-height: .75
+			font-weight: 400
+				
 	.slick
 		&-list
 			overflow: initial
@@ -889,15 +902,7 @@
 				height: 16px !important
 				opacity: 1 !important
 
-	&__decor
-		position: absolute
-		top: -17px
-		left: 20%
-		color: #4cddee
-		font-family: Montserrat
-		font-size: 150px
-		line-height: .75
-		font-weight: 400
+
 
 	&__login
 		position: absolute
